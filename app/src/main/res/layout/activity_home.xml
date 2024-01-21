@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="80dp"
+        android:text="Welcome to Harsh's Cafe" />
+
+    <EditText
+        android:layout_margin="20dp"
+        android:id="@+id/firstOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Order"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_margin="20dp"
+        android:id="@+id/secondOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Order"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_margin="20dp"
+        android:id="@+id/thirdOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Third Order"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_margin="20dp"
+        android:id="@+id/fourthOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fourth Order"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:text="Order!"
+        android:backgroundTint="@color/cardview_light_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
